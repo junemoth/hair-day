@@ -4,45 +4,107 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Bare Bones Layout</title>
-    <meta name="description" content="A brief description" />
-    <meta name="author" content="your site name" />
+    <title>Hair Day Salon</title>
+    <meta
+      name="description"
+      content="Based in Madison, Wisconsin, Hair Day is a boutique hair salon that specializes in cut, color and styling."
+    />
+    <meta name="author" content="Hair Day Salon" />
 
-    <!-- Open Graph Protocol -->
-    <!-- Use if planning to share web page on social media -->
-    <!--
-    <meta property="og:title" content="A brief description" />
+    <meta
+      property="og:title"
+      content="Based in Madison, Wisconsin, Hair Day is a boutique hair salon that specializes in cut, color and styling."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.mysite" />
     <meta property="og:description" content="A brief description" />
-    <meta property="og:image" content="image.png" />
-    -->
+    <meta property="og:image" content="/src/images/initial-cream-shadow.png" />
 
-    <!--
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    -->
+    <link rel="icon" href="/src/images/initial-cream-shadow.png" />
+    <link rel="apple-touch-icon" href="/src/images/initial-cream-shadow.png" />
 
-    <!-- Include your CSS files here -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <header>
-      <!-- Add your website name or logo here -->
-      <p>Header</p>
+      <img
+        src="/src/images/initial-cream-shadow.png"
+        alt="Hair Day logo"
+        width="200px"
+      />
     </header>
     <nav>
-      <!-- Add your website navigation here -->
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Book Online</a></li>
+      </ul>
     </nav>
     <main>
-      <!-- Add your main content here -->
-      <h1>Heading</h1>
+      <div>
+        <!-- Banner -->
+        <img
+          src="/src/images/hair-pink.jpg"
+          alt="woman with pink hair"
+          width="1000"
+        />
+        <h1>Welcome to Hair Day</h1>
+      </div>
+
+      <div class="container">
+        <article>
+          <h2>About Us</h2>
+          <img src="/src/images/brushes.jpg" alt="makeup brushes" width="200" />
+          <p>
+            Based in Madison, Wisconsin, Hair Day is a boutique hair salon that
+            specializes in cut, color and styling. Hair Day also offers makeup
+            and nail services, prides itself on its warm and relaxing atmosphere
+            and is best known for edgy hair colors and on-trend cuts.
+          </p>
+          <button>Meet the team</button>
+        </article>
+        <article>
+          <h2>Our Services</h2>
+          <img
+            src="/src/images/scissors-pink.jpg"
+            alt="hairdressing scissors"
+            width="200"
+          />
+          <p>
+            As well as our on on-trend cut, color, and styling services, Hair
+            Day also offers makeup and nail services. As the salon can only
+            accommodate a small number of coloring appointments each week, book
+            online now so you don't miss out.
+          </p>
+          <button>Book Now</button>
+        </article>
+        <article>
+          <h2>Get Inspired</h2>
+          <img
+            src="/src/images/tools-pink.jpg"
+            alt="beauty tools"
+            width="200"
+          />
+          <p>
+            In between appointments and want to feel inspired? We have an
+            amazing collection of tutorials, tips, and tricks straight from our
+            talented team of stylists. Find inspiration today!
+          </p>
+          <button>Check it out</button>
+        </article>
+      </div>
     </main>
     <footer>
       <!-- Add copyright notice and other footer content here  -->
-      <p>Footer</p>
+      <div>
+        <img src="/src/images/text-white.png" alt="hair day logo" width="300" />
+      </div>
+      <div>
+        <h2>Hair Day</h2>
+        <p>Copyright Hair Day 2024</p>
+      </div>
     </footer>
 
     <!-- Include your JavaCcript files here  -->
