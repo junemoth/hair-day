@@ -1,7 +1,194 @@
-footer {
-  background-color: black;
+/* red: rgb(208, 96, 76) */
+/* cream: rgb(242, 224, 210) */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-footer p {
+nav {
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+#main-logo {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  list-style-type: none;
+}
+
+@media (min-width: 900px) {
+  nav > ul {
+    flex-direction: row;
+  }
+}
+
+nav a {
+  flex: 1 1 auto;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(208, 96, 76);
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: rgb(208, 96, 76);
+  font-weight: bolder;
+  font-style: oblique;
   color: white;
+}
+
+#banner {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner > a {
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner > a:hover {
+  font-size: 2.5rem;
+  transition: 0.2s;
+}
+
+main {
+  display: grid;
+}
+
+main .container {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 0 2rem 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.container > article {
+  background-color: rgb(252, 250, 247);
+  margin: 1rem;
+}
+
+article div {
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  article:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+  }
+}
+
+article h2 {
+  color: rgb(208, 96, 76);
+  font-weight: 900;
+  font-style: oblique;
+  font-size: xx-large;
+  text-transform: uppercase;
+  display: block;
+  text-align: justify;
+}
+
+article img {
+  width: 100%;
+}
+
+article p {
+  color: rgb(92, 92, 92);
+  line-height: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+button {
+  background-color: rgb(208, 96, 76);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: rgb(197, 85, 65);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(208, 96, 76);
+}
+
+footer .container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  color: white;
+  padding: 3rem;
+}
+
+footer .container > div {
+  padding: 1rem;
+  flex: 1 0 auto;
+}
+
+footer .container h2 {
+  text-transform: uppercase;
+  font-size: medium;
+  padding-bottom: 1rem;
+}
+footer .container p {
+  color: white;
+  font-size: small;
+}
+
+@media (min-width: 600px) {
+  footer .container {
+    flex-direction: row;
+  }
 }
